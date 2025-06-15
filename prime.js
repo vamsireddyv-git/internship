@@ -1,11 +1,15 @@
-function isPrime(num) 
-{
-  if (num <= 1) 
-    return false;
-  for (let i = 2; i <= Math.sqrt(num); i++)
-     {
-    if (num % i === 0) return false;
+function itsprime(n){
+  for (let i =2;i<n; i++){
+    if(n % i ===0) {
+      return false
+    }
+    return true
   }
-  return true;
 }
-console.log(isPrime(5));
+
+for (let i =2 ; i<=100;i++)
+{
+  if(itsprime(i)){
+    console.log(i);
+}
+}
