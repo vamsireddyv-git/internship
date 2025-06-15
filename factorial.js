@@ -1,6 +1,12 @@
-function factorial(n) {
-  if (n < 0) return undefined;
-  if (n === 0) return 1;
-  return n * factorial(n - 1);
+function factorial(n)
+{
+  let number = n;
+  let fact = 1;
+  
+  for(let i =1; i<=number;i++)
+  {
+    fact = fact * i;
+  }
+  return fact;
 }
-console.log("Factorial of 5 is :", factorial(5));
+console.log(factorial(5));
